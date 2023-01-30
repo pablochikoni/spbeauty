@@ -11,11 +11,14 @@ function PrimaryButton(props) {
         min-width: ${minWidth};
         color: white;
         border-radius: 24px;
+        border: 1px solid #3B82F6;
         &:hover {
             background: rgba(59, 130, 246, 0.8);
+            border-radius: 1px solid rgba(59, 130, 246, 0.8);
         }
         &:active {
-            background: #3B82F6;
+            background: rgba(15,23,42,0.6);
+            border: 1px solid rgba(15,23,42,0.6);
         }
     `;
     return (
