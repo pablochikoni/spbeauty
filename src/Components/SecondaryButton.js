@@ -5,17 +5,17 @@ function SecondaryButton(props) {
     // Здесь устанавливается минимальная ширина для кнопки
     let minWidth = props.minWidth === undefined ? '217px' : props.minWidth;
     const Button = styled.div`
-        background: #fff;
-        border: 1px solid rgba(100, 116, 139, 1);
-        border-radius: 24px;
+    background: #fff;
+    border: 1px solid #64748B;
+    border-radius: 24px;
+        
         min-width: ${minWidth};
         color: #64748B;
         &:hover {
-            background: rgba(100, 116, 139, 0.8);
-            border: 0px;
+            opacity: 80%;
         }
         &:active {
-            background: #fff;
+            opacity: 60%;
         }
     `;
     return (
